@@ -1,0 +1,41 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#00A1DB",
+    "navigationBarTitleText": "聚金资本",
+    "navigationBarTextStyle":"#fff",
+    "navigationStyle":"defualt",
+    "enablePullDownRefresh":true
+
+  },
+  "tabBar":{
+    "color":"#ccc",
+    "selectedColor":"#10aaf2",
+    "list":[{
+      "pagePath":"pages/index/index",
+      "text":"首页",
+      "iconPath":"image/icon/home-hover.png",
+      "selectedIconPath":"image/icon/home-active.png"
+    },{
+      "pagePath": "pages/index/index",
+      "text": "出借",
+      "iconPath": "image/icon/borrow-hover.png",
+      "selectedIconPath": "image/icon/borrow-active.png"
+    },{
+      "pagePath": "pages/index/index",
+      "text": "发现",
+      "iconPath": "image/icon/find-hover.png",
+      "selectedIconPath": "image/icon/find-active.png"
+    },{
+      "pagePath": "pages/index/index",
+      "text": "账户",
+      "iconPath": "image/icon/account-hover.png",
+      "selectedIconPath": "image/icon/account-active.png"
+    }]
+  }
+
+}

@@ -1,0 +1,48 @@
+<!--index.wxml-->
+<view class="container">
+ <swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}" wx:key="key">
+    <swiper-item>
+    <navigator target="{{item.url}}" open-type="redirect">
+     <image src="{{item.img}}" class="slide-image" width="355" height="160"/>
+    </navigator>
+    </swiper-item>
+  </block>
+</swiper> 
+
+<view class='containertwo'>
+  <view class='itemtwo' wx:for="{{navData}}">
+   <image src="{{item.imageUrl}}" class="navData-image"/>
+   <view class="navData-text">{{item.name}}</view>
+  </view>
+</view>
+
+<view>
+<swiper indicator-dots= false
+class="noticelinks"
+  autoplay="{{autoplay}}" interval="1500" vertical="1000" duration="1000">
+  <block wx:for="{{noticelinks}}">
+    <swiper-item>
+    <text class='noticelinksText'>{{item.articleTitle}}</text>
+    </swiper-item>
+  </block>
+</swiper> 
+</view>
+
+<view class='borrowShow'>
+    <text class='borrowShowText'>9.8%~15.6%</text>
+    <text class='borrowShowsubText'>{{borrowshow.subTitle}}</text>
+    <text class='borrowShowsubText'>{{borrowshow.infors}}</text>
+    <view>
+    <navigator class='borrowShowbtn'>{{borrowshow.btn}}</navigator>
+</view>
+</view>
+
+
+<view>
+  
+</view>
+
+
+</view>
